@@ -15,7 +15,7 @@ app = FastAPI(
     version="1.0.0"
 )
 
-origins = [os.getenv("FRONTEND_URL", "*")]
+origins = [os.getenv("FRONTEND_URL","https://inventory-order-management-system-olive.vercel.app/")]
 
 app.add_middleware(
     CORSMiddleware,
