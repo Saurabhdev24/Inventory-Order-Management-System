@@ -15,14 +15,17 @@ app = FastAPI(
     version="1.0.0"
 )
 
-origins = [os.getenv("FRONTEND_URL","https://inventory-order-management-system-olive.vercel.app/")]
+origins = [
+    "https://inventory-order-management-system-olive.vercel.app",
+    "http://localhost:5173",
+]
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
     allow_credentials=True,
-    allow_methods=["GET", "POST", "PUT", "DELETE"],
-    allow_headers=["Content-Type"],
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 
