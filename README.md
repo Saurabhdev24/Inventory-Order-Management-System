@@ -63,5 +63,9 @@ docker compose up --build
 ## Deployment
 
 - Backend deployed on **Render**
-- Frontend deployed on **Vercel**    theek h
-```
+- Frontend deployed on **Vercel**   
+
+## Links
+- backend links - https://inventory-order-management-system-eeuw.onrender.com/docs
+                - https://inventory-order-management-system-eeuw.onrender.com/
+- final deployed Link - https://inventory-order-management-system-olive.vercel.app/ 
